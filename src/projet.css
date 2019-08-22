@@ -1,0 +1,78 @@
+.projet-image {
+  width: 60vw;
+  position: relative;
+  left: 35%;
+  top: 20vh;
+}
+
+#projet1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.texte-projets {
+  position: absolute;
+  color: white;
+  width: 30vw;
+  height: 20vh;
+  z-index: 3;
+  margin: 10vh;
+  bottom: 35vh;
+}
+
+.projet-ul {
+  position: absolute;
+  left: 30%;
+  width: 30%;
+  margin: 5%;
+}
+
+.projet-h3 {
+  margin: 5%;
+  font-size: 3rem;
+}
+
+#svgprojets {
+  transform: rotate(180deg);
+  height: 90vh;
+  width: 80vw;
+  position: absolute;
+  z-index: 2;
+  left: 5vw;
+  top: 5vh;
+}
+
+.slidenumber {
+  transform: rotate(-90deg);
+  color: white;
+  position: absolute;
+  left: 40%;
+  top: 5vh;
+  font-size: 2rem;
+}
+
+.projet-github {
+  color: white;
+  position: absolute;
+  left: 80%;
+  top: 5vh;
+  font-size: 1.5rem;
+}
+
+.home-container {
+  width: 15vw;
+  height: 2vh;
+  position: absolute;
+  left: 65%;
+  bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.projet-logo {
+  width: 10vh;
+}
