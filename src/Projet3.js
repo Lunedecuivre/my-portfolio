@@ -37,9 +37,9 @@ export class Projet3 extends Component {
               width="608.75"
               height="400.5"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
@@ -58,9 +58,9 @@ export class Projet3 extends Component {
               width="608.75"
               height="400.5"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -87,12 +87,14 @@ export class Projet3 extends Component {
           </defs>
         </svg>
 
-        <img className="projet-image" src="../images/wewerewitches.png" />
+        <img className="projet-image" src="../images/www.png" />
         <p className="slidenumber">3/3</p>
         <h4 className="projet-github">github -></h4>
 
         <div className="texte-projets">
-          <h3 className="projet-h3">We Were Witches</h3>
+          <div className="mainprojet">
+            <h1 className="socod">WWW</h1>
+          </div>{" "}
           <p className="projet-p">
             Doggo ipsum lotsa pats many pats shoob clouds doggo smol borking
             doggo with a long snoot for pats, you are doing me a frighten doggo
@@ -109,7 +111,7 @@ export class Projet3 extends Component {
           </ul>
         </div>
         <div className="home-container">
-          <img className="projet-logo" src="./images/logo.png" />
+          <img className="projet-logo" src="./images/logo.gif" />
           <h4 className="projet-h4">home</h4>
         </div>
       </div>

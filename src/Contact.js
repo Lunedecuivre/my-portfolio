@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./contact.css";
 import axios from "axios";
+import Loading from "./Loading";
+import { Link } from "react-router-dom";
 
 export class Contact extends Component {
   handleSubmit(e) {
@@ -30,21 +32,54 @@ export class Contact extends Component {
     document.getElementById("form").reset();
   }
 
+  state = { isLoading: true };
+
+  componentDidMount() {
+    this.setState({ isLoading: false });
+  }
+
   render() {
+    if (this.state.isLoading) {
+      return <Loading />;
+    }
     return (
-      <div>
-        <h1 className="titrecontact">Stay in touch</h1>
+      <div id="contact">
+        <div className="homebarcontact">
+          <Link to="/">
+            <img className="projet-logo" src="./images/logo.gif" />
+          </Link>{" "}
+          <h3> home</h3>
+        </div>
+        <div className="maincontact">
+          <h1 className="socod">stay in touch</h1>
+        </div>{" "}
         <img id="photocontact" src="images/photocontact.png" alt="" />
-        <p>
-          mais aussi: <br />
-          x 06 09 63 05 43 <br />x lena.defirmas@gmail.com
-        </p>
-        <ul>
-          <li>linkedin</li>
-          <li>github</li>
-          <li>instagram</li>
-          <li>pinterest</li>
-        </ul>
+        <div className="contact-txt">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/l%C3%A9na-de-firmas-78568982/">
+                // linkedin //
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Lunedecuivre">// github //</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/lunedecuivre/">
+                // instagram //
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.fr/lunedecuivre/">
+                // pinterest //
+              </a>
+            </li>
+          </ul>
+          <p>
+            mais aussi: <br />
+            x 06 09 63 05 43 <br />x lena.defirmas@gmail.com
+          </p>
+        </div>
         <form
           id="form"
           className="topBefore"

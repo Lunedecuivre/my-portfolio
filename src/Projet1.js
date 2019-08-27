@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { directive } from "@babel/types";
 import "./projet.css";
 import { Link } from "react-router-dom";
 
@@ -39,9 +38,9 @@ export class Projet1 extends Component {
               width="608.75"
               height="400.5"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
@@ -60,9 +59,9 @@ export class Projet1 extends Component {
               width="608.75"
               height="400.5"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -88,13 +87,13 @@ export class Projet1 extends Component {
             </filter>
           </defs>
         </svg>
-
-        <img className="projet-image" src="../images/bubblefactory.png" />
-        <p className="slidenumber">1/3</p>
+        <img className="projet-image" src="../images/momentum.png" />
+        <h3 className="slidenumber">1/3</h3>
         <h4 className="projet-github">github -></h4>
-
+        <div className="mainprojet">
+          <h1 className="socod">momentum</h1>
+        </div>{" "}
         <div className="texte-projets">
-          <h3 className="projet-h3">Bubble Factory</h3>
           <p className="projet-p">
             Doggo ipsum lotsa pats many pats shoob clouds doggo smol borking
             doggo with a long snoot for pats, you are doing me a frighten doggo
@@ -105,13 +104,16 @@ export class Projet1 extends Component {
             big ol pupper heckin.
           </p>
           <ul className="projet-ul">
+            <li>Technologies utilisées:</li>
             <li>Lorem</li>
             <li>Lorem</li>
             <li>Lorem</li>
           </ul>
         </div>
         <div className="home-container">
-          <img className="projet-logo" src="./images/logo.png" />
+          <Link to="/">
+            <img className="projet-logo" src="./images/logo.gif" />
+          </Link>
           <h4 className="projet-h4">home</h4>
         </div>
       </div>

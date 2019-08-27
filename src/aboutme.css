@@ -90,3 +90,141 @@ link {
   font-weight: bolder;
   transform: rotate(-90deg);
 }
+
+body {
+  background: url(./background/sun.gif);
+  background-size: cover;
+}
+
+#cvlink {
+  position: absoplute;
+  top: 80vh;
+  left: 60vh;
+  text-decoration: none;
+  color: white;
+}
+
+#file {
+  width: 10vh;
+}
+
+.aboutme-p {
+  color: white;
+  width: 30%;
+  position: absolute;
+  left: 60%;
+  top: 40vh;
+}
+
+.mainaboutme {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+.mainaboutme span {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+  transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+.mainaboutme .webdev {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px hsl(323, 97%, 66%),
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px hsl(323, 97%, 66%),
+    0 0 100px hsl(323, 97%, 66%), 0 0 200px hsl(323, 97%, 66%),
+    0 0 300px hsl(323, 97%, 66%), 0 0 500px hsl(323, 97%, 66%),
+    0 0 1000px hsl(323, 97%, 66%);
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 4s infinite alternate;
+}
+.mainaboutme .socod {
+  font-size: 4.5rem;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainaboutme {
+    width: 400px;
+    font-size: 5rem;
+  }
+
+  .mainaboutme .socod {
+    font-size: 5rem;
+  }
+}
+
+.homebaraboutme {
+  margin: 5vh;
+  left: 80vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  color: white;
+  width: 20vw;
+}

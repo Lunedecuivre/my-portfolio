@@ -99,7 +99,6 @@ header {
 #form {
   position: relative;
   width: 100%;
-  margin: 10vh;
 }
 
 input {
@@ -172,20 +171,149 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 }
-.titrecontact {
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 4rem;
+
+.maincontact {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+.maincontact span {
+  display: block;
   position: relative;
-  top: 25vh;
-  z-index: 3;
-  left: 5vw;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+  transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+.maincontact .webdev {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px hsl(323, 97%, 66%),
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px hsl(323, 97%, 66%),
+    0 0 100px hsl(323, 97%, 66%), 0 0 200px hsl(323, 97%, 66%),
+    0 0 300px hsl(323, 97%, 66%), 0 0 500px hsl(323, 97%, 66%),
+    0 0 1000px hsl(323, 97%, 66%);
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 4s infinite alternate;
+}
+.maincontact .socod {
+  font-size: 4.5rem;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .maincontact {
+    width: 400px;
+    font-size: 5rem;
+  }
+
+  .maincontact .socod {
+    font-size: 5rem;
+  }
 }
 
 #photocontact {
   position: absolute;
   z-index: 0;
-  width: 80vw;
+  width: 75vw;
   top: 0;
   right: 0;
+}
+
+/**/
+
+form {
+  left: -40vh;
+  top: 30vh;
+}
+
+.contact-txt {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.contact-txt ul {
+  list-style: none;
+}
+
+.homebarcontact {
+  left: -70vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  color: white;
+  width: 20vw;
+  margin: 5vh;
+  top: -5vh;
 }

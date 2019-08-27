@@ -1,8 +1,8 @@
 .projet-image {
-  width: 60vw;
+  width: 40vw;
   position: relative;
-  left: 35%;
-  top: 20vh;
+  left: 45%;
+  top: 12vh;
 }
 
 #projet1 {
@@ -18,6 +18,14 @@
   z-index: 3;
   margin: 10vh;
   bottom: 35vh;
+  left: 10vh;
+  top: 35vh;
+  text-align: right;
+}
+
+.texte-projets ul {
+  list-style: none;
+  width: 20vw;
 }
 
 .projet-ul {
@@ -25,11 +33,6 @@
   left: 30%;
   width: 30%;
   margin: 5%;
-}
-
-.projet-h3 {
-  margin: 5%;
-  font-size: 3rem;
 }
 
 #svgprojets {
@@ -71,8 +74,315 @@
   align-items: center;
   color: white;
   font-size: 1.5rem;
+  z-index: 10000;
 }
 
 .projet-logo {
   width: 10vh;
+}
+
+.mainprojet {
+  display: block;
+  position: absolute;
+  z-index: 4;
+  top: 35%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+.mainprojet span {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+  transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+.mainprojet .webdev {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px hsl(323, 97%, 66%),
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px hsl(323, 97%, 66%),
+    0 0 100px hsl(323, 97%, 66%), 0 0 200px hsl(323, 97%, 66%),
+    0 0 300px hsl(323, 97%, 66%), 0 0 500px hsl(323, 97%, 66%),
+    0 0 1000px hsl(323, 97%, 66%);
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 4s infinite alternate;
+}
+.mainprojet .socod {
+  font-size: 0.5rem;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainprojet {
+    width: 400px;
+    font-size: 5rem;
+  }
+
+  .mainprojet .socod {
+    font-size: 4rem;
+  }
+}
+
+/* */
+
+.mainprojet2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  top: -15vh;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+.mainprojet2 span {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+  transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+.mainprojet2 .webdev {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px hsl(323, 97%, 66%),
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px hsl(323, 97%, 66%),
+    0 0 100px hsl(323, 97%, 66%), 0 0 200px hsl(323, 97%, 66%),
+    0 0 300px hsl(323, 97%, 66%), 0 0 500px hsl(323, 97%, 66%),
+    0 0 1000px hsl(323, 97%, 66%);
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 4s infinite alternate;
+}
+.mainprojet2 .socod {
+  font-size: 0.5rem;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainprojet2 {
+    width: 400px;
+    font-size: 5rem;
+  }
+
+  .mainprojet2 .socod {
+    font-size: 4rem;
+  }
+}
+
+/**/
+
+.mainprojet2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  top: -15vh;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+.mainprojet2 span {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+  transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+.mainprojet2 .webdev {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px hsl(323, 97%, 66%),
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px hsl(323, 97%, 66%),
+    0 0 100px hsl(323, 97%, 66%), 0 0 200px hsl(323, 97%, 66%),
+    0 0 300px hsl(323, 97%, 66%), 0 0 500px hsl(323, 97%, 66%),
+    0 0 1000px hsl(323, 97%, 66%);
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 4s infinite alternate;
+}
+.mainprojet2 .socod {
+  font-size: 0.5rem;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainprojet2 {
+    width: 400px;
+    font-size: 5rem;
+  }
+
+  .mainprojet2 .socod {
+    font-size: 4rem;
+  }
 }
